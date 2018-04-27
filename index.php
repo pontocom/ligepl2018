@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,6 +20,19 @@
 <div class="container">
     <div class="row">
         <div class="col-8">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="http://affinitymagazine.us/wp-content/uploads/2017/03/Art-1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://zersey.com/m.zersey/assets/zerseynme/6106ccb0648d16bfeebea3eb9dmichael-jackson-art-hd-wallpapers-231r1lx.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="http://www.urlag.mn/Admin/uploaded/wallpaper-27132430642015-05-29-08-47[www.urlag.mn].jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-4">
             <h1>Login</h1>
@@ -26,9 +45,13 @@
                         $type= "alert-success";
                         $message = "Utilizador registado com sucesso!!!!";
                         break;
+                    case 1:
+                        $type= "alert-success";
+                        $message = "Login bem sucedido!!!!";
+                        break;
                     case -1:
                         $type= "alert-danger";
-                        $message = "Erro no regito do utilizador!!!!";
+                        $message = "Erro no registo do utilizador!!!!";
                         break;
                     case -2:
                         $type= "alert-danger";

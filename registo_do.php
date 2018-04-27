@@ -6,7 +6,7 @@
  * Time: 19:18
  */
 
-$db = mysqli_connect("127.0.0.1", "root", "lige2018", "ligepl") or die("Erro na ligação à BD!!!");
+$db = mysqli_connect("127.0.0.1", "root", "teste123", "ligepl2018") or die("Erro na ligação à BD!!!");
 
 $sql = "INSERT INTO users VALUES ('".$_REQUEST['email']."', '".sha1($_REQUEST['password'])."')";
 //echo $sql;
